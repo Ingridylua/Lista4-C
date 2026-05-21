@@ -1,0 +1,25 @@
+Questão 8 - resposta
+
+#include <stdio.h>
+
+int main() {
+
+    int opcao;
+
+   
+    do {
+
+        printf("MENUn");
+        printf("1 - Opção 1");
+        printf("2 - Opção 2");
+        printf("0 - Sair");
+
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+    } while(opcao != 0);
+
+    printf("Programa encerrado");
+
+    return 0;
+}
