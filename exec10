@@ -6,40 +6,38 @@ int main() {
 
     int i;
     int numero;
-    int positivo = 0;
-    int negativo = 0;
-    int zero = 0;
+    int maior;
+    int menor;
 
     
-    for(i = 1; i <= 10; i++) {
-
-        printf("Digite o %d numero: ", i);
-        scanf("%d", &numero);
-
-        
-        if(numero >0) {
-
-            positivo++;
-
-        } else if(numero < 0) {
-
-            negativo++;
-
-        }
-        
-        
-        else {
-
-            zero++;
-
-        }
+    printf("Digite o numero 1: ");
+    scanf("%d", &numero);
 
    
-    printf("\nRESULTADOS\n");
+    maior = numero;
+    menor = numero;
 
-    printf("Positivos: %d", positivo);
-    printf("Negativos: %d", negativo);
-    printf("Zeros: %d", zero);
+    
+    for(i = 2; i <= 5; i++) {
+
+        printf("Digite o numero %d: ", i);
+        scanf("%d", &numero);
+
+        if(numero > maior) {
+
+            maior = numero;
+        
+        if(numero < menor) {
+
+            menor = numero;
+
+        }
+
+    }
+
+    
+    printf("\nMaior numero: %d", maior);
+    printf("Menor numero: %dn", menor);
 
     return 0;
 }
