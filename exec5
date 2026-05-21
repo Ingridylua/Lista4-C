@@ -1,0 +1,34 @@
+Questão 5 - resposta
+
+#include <stdio.h>
+
+int main() {
+
+    int numero;
+    int total = 0;
+    int positivos = 0;
+
+    printf("Digite um numero: ");
+    scanf("%d", &numero);
+
+  
+    while(numero != 0) {
+
+        total++;
+
+    
+        if(numero > 0) {
+
+            positivos++;
+
+        }
+
+        printf("Digite outro numero (0 para parar): ");
+        scanf("%d", &numero);
+
+
+    printf("Total de numeros digitados: %d", total);
+    printf("Quantidade de positivos: %d", positivos);
+
+    return 0;
+}
