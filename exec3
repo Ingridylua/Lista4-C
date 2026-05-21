@@ -1,0 +1,27 @@
+Questão 3 - resposta
+
+#include <stdio.h>
+
+int main() {
+
+    int i;
+    int numero;
+    int contador = 0;
+
+   
+    for (i = 0; i < 10; i++) {
+
+        printf("Digite um numero: ");
+        scanf("%d", &numero);
+
+        
+        if (numero > 50) {
+
+            contador++;
+    }
+
+    
+    printf( Quantidade de numeros maiores que 50: %d, contador);
+
+    return 0;
+}
